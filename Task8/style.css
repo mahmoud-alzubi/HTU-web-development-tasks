@@ -1,0 +1,153 @@
+*,body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+header h1 {
+    font-size: 18px;
+    text-align: center;
+    background-color: #6F6F6F;
+    color: #A1A4A6;
+    padding: 1rem;;
+}
+
+
+nav{
+    background-color: black;
+    padding: 1.4rem;
+    
+    
+}
+
+nav a {
+    
+    background-color: white;
+    padding: 0.3rem 1rem;
+    box-shadow: 1px 1px black;
+    color: black;
+    text-decoration: none;
+  
+}
+.left {
+    float: left;
+    margin-top: -10px;
+
+}
+
+.right{
+    float: right;
+    margin-top: -10px;
+
+}
+
+
+.right ul {
+    list-style: none;
+}
+.right ul>li {
+    display: inline-block;
+    margin-left: 0.5rem;
+    margin-right: 0.2rem;
+}
+.container{
+    height: 78.9%;  
+    background: url(imgs/bg.PNG);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding:0 18%;
+}
+.sub-container{
+    padding-top: 2.5%;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    min-height: 15em;
+    margin-bottom: 0.4rem;
+   
+}
+.col-4{
+flex-basis:33.33%;
+margin-left: 1%;
+margin-bottom:1%;
+min-height: 5%;
+text-align: center;
+
+
+}
+.success{
+    background-color: #009681;
+}
+
+.primary{
+    background-color: #023E7D;
+}
+
+.info{
+    background-color: #0081A7
+}
+
+.blue{
+    background-color: #001845;
+}
+.burbule{
+    background-color: #7209B7;
+}
+.danger{
+    background-color: #9E2A2B;
+}
+
+footer{
+    text-align: center;
+    background-color: #CF7133;
+    padding: 0.85rem;
+    font-size: 14px;
+}
+
+.row a {
+    text-decoration: none;
+    
+}
+
+.col-4:hover {
+    background-color: rgba(255,255,255,0.8);
+    color: black;
+}
+
+.col-4 i {
+    position: relative;
+    top:45%;
+    font-size: 1.7rem;
+    color:white;
+}
+
+
+
+    
+@media only screen and (max-width: 768px) {
+
+    .row{
+        display: flex;
+        flex-direction: column;
+        min-height: 15em;
+        margin-bottom: 0.4rem;
+       
+    }
+    .col-4{
+        padding:1rem;
+    }
+.col-4 i {
+        font-size: 20px;
+    }
+
+}
+
+
+

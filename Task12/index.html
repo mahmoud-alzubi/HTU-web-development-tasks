@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="inner-container">
+            <div class="right">
+                <h2>استعلام عن الطلبات</h2>
+
+                <label for="right_ref_num"> الرقم المرجعي</label>
+                <div class="right_row1">
+                    <input type="text" id="right_ref_num" class="right-item">
+                </div>
+
+                <label for="right_nationality"> الجنسية</label>
+                <div class="right_row1">
+                    <input type="text" id="right_nationality" class="right-item">
+                </div>
+                <label for="right_ssn"> الرقم الوطني</label>
+                <div class="right_row1">
+                    <input type="text" id="right_ssn" class="right-item">
+                </div>
+                <label for="right_ssn"> الكود المرئي</label>
+                <div class="right_row1-cap">
+                    <img src="Cap.PNG" alt="">
+                    <input type="text" id="right_ssn" class="right-item">
+                </div>
+                <div class="right-actions">
+                    <a href="#">نسيت الرقم المرجعي </a>
+                    <button class="right-button" onclick="fun()">استعلام عن الطلبات </button>
+                </div>
+            </div>
+            <div class="left">
+                <h2>تقديم الطلبات </h2>
+                <div class="row1">
+                    <div>
+                        <label for="">الجنسية</label>
+                        <br>
+                        <select name="ssn" id="ssn">
+                            <option value="jo">أردني</option>
+                            <option value="usa">أمريكي</option>
+                            <option value="uae">أمراتي</option>
+                            <option value="ksa">سعودي</option>
+                        </select>
+                    </div>
+                    <div> <label for="">الرقم الوطني</label>
+                        <br>
+                        <input type="text" id="left_ssn"></div>
+                    <div> <label for="">تاريخ الميلاد</label>
+                        <br>
+                        <input type="date"></div>
+                </div>
+                <div class="row2 row1">
+                    <div>
+                        <label for="">لغة الشهادة المطلوبة</label>
+                        <br>
+                        <select name="ssn" id="ssn">
+                            <option value="jo">-- أختر --</option>
+                            <option value="usa">أنجليزي</option>
+                            <option value="uae">عربي</option>
+
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">الأسم الأول<label>
+                                <br>
+                                <input type="text" class="name" id='first_name'>
+                    </div>
+                    <div>
+                        <label for="">أسم العائلة<label>
+                                <br>
+                                <input type="text" class="name" id='last_name'>
+                    </div>
+                </div>
+
+                <div class="row3 row1">
+                    <div>
+                        <label for="">الغاية من تقديم الشهادة</label>
+                        <br>
+                        <select name="why-cer" id="why_cer">
+                            <option value="jo">-- أختر --</option>
+                            <option value="usa">انتخابات</option>
+                            <option value="uae">جهات خارجية</option>
+                            <option value="uae"> جهات داخلية</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for=""> تصدر من</label>
+                        <br>
+                        <select name="why-cer" id="why_cer">
+                            <option value="jo">-- أختر --</option>
+                            <option value="usa">محكمة بداية اربد</option>
+                            <option value="uae"> محكمة بداية الرمثا</option>
+                            <option value="uae"> محكمة بداية عمان</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="row4 row1">
+                    <div style="display: flex;    flex-direction:column">
+                        <label for="">أرجو اعلامي من خلال:</label>
+                        <small style="font-size: 15px; color: #2E6C83"> يرجى إدخال رقم هاتف صحيح ليتم إعلامكم بمراحل
+                            إصدار شهادة عدم المحكومية
+                        </small>
+                        <div style="display: flex; flex-direction: row;">
+                            <div>
+                                <label for="">رسالة قصيرة</label>
+                                <br>
+                                <input type="text" class="xyz">
+                            </div>
+
+                            <div>
+                                <label for=""> البريد الالكتروني</label>
+                                <br>
+                                <input type="text" class="xyz" id="email"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row5 row1">
+                    <label for="right_ssn"> الكود المرئي</label>
+                    <div class="right_row1-cap">
+                        <img src="Cap.PNG" alt="">
+                        <div style="display: flex; flex-direction: row;">
+                            <input type="text" id="right_ssn" class="right-item"
+                                style="padding-top: 0px; margin-top: 0px;">
+                            <button class="left-button" onclick="fun2()"> تقديم الطلب </button>
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+
+            function fun() {
+                var right_error;
+                var right_ref_num = document.getElementById('right_ref_num').value;
+                var right_nationality = document.getElementById('right_nationality').value;
+                var right_ssn = document.getElementById('right_ssn').value;
+
+                var numbers = /^[a-zA-Z]+$/;
+                if (right_ref_num.length != 5) {
+                    right_error = 'يرجى التأكد من الرقم المرجعي يجب ان يحتوي على 5 احرف وارقام فقط'
+                }
+
+                var right_nationality = document.getElementById('right_nationality').value;
+                if (!(right_nationality.match(numbers))) {
+                    right_error = right_error + '\n' + ' حقل الجنسية لا يجب ان يحتوي على ارقام او اي رموز خاصة ';
+                }
+
+                if (right_ssn.length != 8) {
+                    right_error = right_error + '\n' + 'يرجى التأكد من الرقم الوطني يجب ان يحتوي على 8 احرف وارقام فقط'
+                }
+                alert(right_error);
+            }
+
+            function fun2() {
+                var left_error;
+                var left_ssn = document.getElementById('left_ssn').value;
+                var first_name = document.getElementById('first_name').value;
+                var last_name = document.getElementById('last_name').value;
+                var email = document.getElementById('email').value;
+                if (left_ssn.length != 8) {
+                    left_error = left_error + '\n' + 'يرجى التأكد من الرقم الوطني يجب ان يحتوي على 8 احرف وارقام فقط'
+                }
+
+                var numbers = /^[a-zA-Z]+$/;
+                if (!(first_name.match(numbers))) {
+                    left_error = left_error + '\n' + ' حقل الاسم الاول لا يجب ان يحتوي ارقام او رموز خاصة ';
+                }
+                if (!(last_name.match(numbers))) {
+                    left_error = left_error + '\n' + ' حقل اسم العائلة لا يجب ان يحتوي ارقام او رموز خاصة ';
+                }
+                if (!(email.includes('@'))) {
+                    left_error = left_error + '\n' + ' حقل البريد الالكتروني يجب ان يحتوي على اشارة @ ';
+                }
+
+                alert(left_error);
+            }
+        </script>
+</body>
+
+</html>

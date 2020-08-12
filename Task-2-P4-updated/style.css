@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*,
+html,
+body {
+    
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body,html{height: 100%;}
+
+header h1 {
+    text-align: center;
+    background-color:#006d77;
+    padding: 2rem;
+    color: white;
+}
+
+.navbar {
+        text-align: center;
+        background-color: #83c5be;
+        position: relative;
+        float: left;
+        width: 15%;
+        height: 70.7%;
+       padding-top: 4rem;
+        
+}
+
+.navbar ul li{
+             position: relative;
+             
+             padding: 1rem;
+             padding-left: 1rem;
+             font-weight: bold;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color:white;
+    }
+
+.navbar ul li a:hover{
+        border-bottom-style:solid;
+        border-bottom-width:2px;
+        border-bottom-color: #ffddd2;
+        }
+
+#container {
+    height: 80%;
+    background-color: #edf6f9;
+    width: 85%;
+    float: left;
+    
+}
+
+
+.item{
+    display: inline-block;
+    width: 47%;
+    margin: 1rem;
+}
+
+#landing-div p{
+    margin-top: 1rem;
+}
+#landing-div ul{
+list-style: none;}
+#landing-div h2 {padding: 1rem;}
+
+#Landing-text {
+    text-shadow: 1px 2px;
+}
+
+.item ul{ list-style: none;}
+.item h2 {margin-bottom: 1rem;;}
+address{margin-top: 1rem;}
+
+#index_container, #container{ 
+    background: url(imgs/bc.jpg) no-repeat center center fixed;
+    background-size: cover;
+display: table;
+position: relative;
+width: 85%;
+height: 80%;}
+
+#index_Landing-div {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+footer {
+    text-align: center;
+    background-color: #ffddd2;
+    padding: 0.1rem;
+}
+

@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+ 
+    background-color: aquamarine;
+    grid-template-columns: auto auto auto;
+    display: grid;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.grid-item{
+    background-color: cornflowerblue;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+.item1{
+    grid-column: 1/3;
+}
+.item3{
+    grid-row: 2/4;
+}
