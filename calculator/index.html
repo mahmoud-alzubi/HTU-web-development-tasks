@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <script src="myscripts.js"></script>
+
+    <title>Calculator</title>
+</head>
+
+<body>
+
+<div class="continaer">
+
+    <div class="calculator">
+        <div class="title_bar">
+
+            <span> calculator</span>
+
+            <ul>
+                <li><a href="#"><i class="fas fa-window-minimize"></i></a></li>
+                <li><a href="#"><i class="far fa-square"></i></a></li>
+                <li><a href="#"><i class="fas fa-times"></i></a></li>
+            </ul>
+
+        </div>
+
+        <div class="screen" ><span id='screen'>0</span></div>
+
+        <div class="action1">
+            <div id="mod" class="action_btn" onclick="funmod1()"><span>%</span></div>
+            <div id="clear_last" class="action_btn" onclick="clear_last()"><span>CE</span></div>
+            <div id="clear" class="action_btn" onclick="Clear1()"><span>C</span></div>
+            <div id="backspace" class="action_btn" onclick="backspace()"><span><i class="fas fa-backspace"></i></span></div>
+        </div>
+        <div class="action1">
+            <div id="num7" class="action_btn action_btn_num" onclick="fun7()"><span>7</span></div>
+            <div id="num8" class="action_btn action_btn_num" onclick="fun8()"><span>8</span></div>
+            <div id="num9" class="action_btn action_btn_num" onclick="fun9()"><span>9</span></div>
+            <div id="divide" class="action_btn" onclick="funDivide1()"><span><i class="fas fa-divide"></i></span></div>
+
+        </div>
+        <div class="action1">
+            <div id="num4" class="action_btn action_btn_num" onclick="fun4()"><span>4</span></div>
+            <div id="num5" class="action_btn action_btn_num" onclick="fun5()"><span>5</span></div>
+            <div id="num6" class="action_btn action_btn_num" onclick="fun6()"><span>6</span></div>
+            <div id="times" class="action_btn" onclick="funtimes1()"><span><i class="fas fa-times"></i></span></div>
+
+        </div>
+        <div class="action1">
+            <div id="num1" class="action_btn action_btn_num" onclick="fun1()"><span>1</span></div>
+            <div id="num2" class="action_btn action_btn_num" onclick="fun2()"><span>2</span></div>
+            <div id="num3" class="action_btn action_btn_num" onclick="fun3()"><span>3</span></div>
+            <div id="minus" class="action_btn" onclick="funMinus()"><span><i class="fas fa-minus"></i></span></div>
+
+        </div>
+        <div class="action1">
+            <div id="equal" class="action_btn action_btn_num" onclick="fun12()"><span><i class="fas fa-equals"></i></span></div>
+            <div id="num0" class="action_btn action_btn_num" onclick="fun0()"><span>0</span></div>
+            <div id="dot" class="action_btn action_btn_num" onclick="fun10()"><span>.</span></div>
+            <div id="plus" class="action_btn" onclick="funplus1()"><span><i class="fas fa-plus"></i></span></div>
+
+        </div>
+    </div>
+
+
+</body>
+</div>
+</html>
